@@ -86,7 +86,7 @@
             var newPassword = document.getElementById('updateNewPassword').value;
             var currentPassword = user.password;
             
-            if (newPassword == currentPassword) {
+            if (newPassword == currentPassword || updateCurrentPassword.value < 1) {
                 console.log('New password must be different than current password.');
                 updatePasswordError.style.display = 'block';
                 updatePasswordError.innerHTML = 'New password must be different than current password.';
