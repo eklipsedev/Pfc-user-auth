@@ -149,3 +149,14 @@
         })
         
     })
+
+eye.addEventListener('click', showPassword);
+
+function showPassword() {
+  var eye = document.getElementById('updateNewPassword');
+  if (eye.type === "password") {
+    eye.type = "text";
+  } else {
+    eye.type = "password";
+  }
+}
