@@ -42,7 +42,7 @@
     
     //Allow the user to update their email address, passwor and custom profile info
     firebase.auth().onAuthStateChanged(function (user) {
-        
+   
         //Allow the user to update their email address
         document.getElementById("updateEmailButton").addEventListener('click', function (event) {
             var email = document.getElementById('updateEmail').value;
@@ -86,7 +86,7 @@
             var newPassword = document.getElementById('updateNewPassword').value;
             var currentPassword = user.password;
             
-            if (newPassword == currentPassword || updateCurrentPassword.value < 1) {
+            if (newPassword == currentPassword) {
                 console.log('New password must be different than current password.');
                 updatePasswordError.style.display = 'block';
                 updatePasswordError.innerHTML = 'New password must be different than current password.';
