@@ -51,8 +51,3 @@ firebase.auth().onAuthStateChanged(function (user) {
     }    
   }
 });
-
-//Run the initApp() function as soon as the page loads
-    window.addEventListener('load', function () {
-        initApp()
-    });
