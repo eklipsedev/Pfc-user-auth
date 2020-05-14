@@ -80,35 +80,7 @@
             }
 
         })
-        
-        /*Allow the user to update their password
-        document.getElementById("updatePasswordButton").addEventListener('click', function (event) {
-            var newPassword = document.getElementById('updateNewPassword').value;
-            var currentPassword = user.password;
-            
-            if (newPassword == currentPassword) {
-                console.log('New password must be different than current password.');
-                updatePasswordError.style.display = 'block';
-                updatePasswordError.innerHTML = 'New password must be different than current password.';
-            }
-            else {
-                console.log('Password updated!');
-                user.updatePassword(newPassword)
-                    .then(function (response) {
-                        //Trigger a success message if it works
-                        console.log('Password Updated!');
-                        document.getElementById('updatePasswordButton').innerHTML = 'Password updated!';
-                        setTimeout(function(){
-    			  document.getElementById('updatePasswordButton').innerHTML = 'Update Password';
-			}, 6000);
-                        
-                        updatePasswordError.style.display = 'none';
-                    })
-            }
-
-        })
-	*/
-
+   
 
         //Allow the user to update their custom profile info
         document.getElementById("updateProfileButton").addEventListener('click', function (event) {
