@@ -1,3 +1,8 @@
+//Run the initApp() function as soon as the page loads
+    window.addEventListener('load', function () {
+        initApp()
+    });
+
 //Sets all the inputs on the Profile page
     initApp = function () {
         firebase.auth().onAuthStateChanged(function (user) {
