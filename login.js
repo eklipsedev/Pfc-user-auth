@@ -23,8 +23,7 @@ function login() {
       // ...
     });
 }
-</script>
-<script>
+
 eye.addEventListener('click', showPassword);
 
 function showPassword() {
