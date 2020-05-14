@@ -81,7 +81,7 @@
 
         })
         
-        //Allow the user to update their password
+        /*Allow the user to update their password
         document.getElementById("updatePasswordButton").addEventListener('click', function (event) {
             var newPassword = document.getElementById('updateNewPassword').value;
             var currentPassword = user.password;
@@ -107,6 +107,7 @@
             }
 
         })
+	*/
 
 
         //Allow the user to update their custom profile info
