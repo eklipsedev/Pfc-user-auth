@@ -3,16 +3,6 @@ signupButton.addEventListener('click', signup);
 function signup() {
   signupButton.style.display = 'none';
   signupError.style.display = 'none';
-  var firstName = signupFirstName.value;
-      if (firstName.length < 1) {
-        alert('First name must be filled in.');
-        return;
-      }
-  var lastName = signupLastName.value;
-      if (lastName.length < 1) {
-        alert('First name must be filled in.');
-        return;
-      }
   var email = signupEmail.value;
   var password = signupPassword.value;
       if (password.length < 4) {
@@ -22,8 +12,9 @@ function signup() {
 
   firebase.auth().createUserWithEmailAndPassword(email, password)
     .then(function () {
-      window.location.replace('./members-club');
-    })
+       window.location.replace('./members-club');
+    };
+  })
 
     .catch(function(error) {
       // Handle Errors here.
