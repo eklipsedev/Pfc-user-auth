@@ -24,8 +24,7 @@ var privatePages = [
 
 var publicPages = [
   '/account/signup',
-  '/account/login',
-  '/account/reset-password'
+  '/account/login'
 ];
 
 firebase.auth().onAuthStateChanged(function (user) {
