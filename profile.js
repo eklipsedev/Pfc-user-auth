@@ -1,5 +1,3 @@
-
-    
 //Sets all the inputs on the Profile page
     initApp = function () {
         firebase.auth().onAuthStateChanged(function (user) {
